@@ -22,9 +22,9 @@ class JobRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'urls'      => 'required|array|min:1',
-            'urls.*'    => 'url',
-            'selectors' => 'required|array|min:1',
+            'urls'        => 'required|array|min:1',
+            'urls.*'      => 'url',
+            'selectors'   => 'required|array|min:1',
             'selectors.*' => 'string',
         ];
     }
